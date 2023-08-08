@@ -1,0 +1,111 @@
+.container-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  background-color: #009ee0;
+}
+
+.continer-contact {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-contact {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-contact-image {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background-color: white;
+}
+
+.card-contact-image > img {
+  width: 25px;
+}
+
+.card-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-contact-info-text {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.card-contact-strong {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container-politic {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container-politic-info {
+  display: flex;
+  gap: 20px;
+}
+
+.container-politic-info-text {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container-politic-logo {
+  width: 120px;
+}
+
+.container-politic-logo > img {
+  width: 100%;
+}
+
+@media (max-width: 769px) {
+  .continer-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container-politic-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 426px) {
+  .continer-contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-politic {
+    flex-direction: column;
+  }
+}

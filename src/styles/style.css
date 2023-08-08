@@ -34,6 +34,14 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .header {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .header-logo {
   /* width: 100px; */
   width: 200px;
@@ -125,8 +133,7 @@ body {
 
 @media (max-width: 768px) {
   .main-waves {
-    height: 40px;
-    min-height: 40px;
+    display: none;
   }
 }
 
@@ -205,6 +212,16 @@ body {
 @media (max-width: 1024px) {
   .info-card {
     width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .infos-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
   }
 }
 
